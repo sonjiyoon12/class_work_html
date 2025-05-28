@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>colspan & rowspan 연습</title>
+
+    <style>
+        * {
+            text-align: center;
+        }
+        table {
+            width: auto;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        } 
+        thead {
+            background-color:bisque;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>시간표</h2>
+    <table border="3">
+      <thead>
+        <th>시간</th>
+        <th>월요일</th>
+        <th>화요일</th>
+        <th>수요일</th>
+        <th>목요일</th>
+      </thead>
+      <tbody>
+        <tr>
+            <td>8:00 - 9:00</td>
+            <td>HTML 수업</td>
+            <td rowspan="3">프로젝트 작업</td>
+            <td colspan="2">JAVA 수업</td>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>JS 수업</td>
+            <td>자습</td>
+            <td>쉬는시간</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>CSS 수업</td>
+            <td>자습</td>
+            <td>JS 실습</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
