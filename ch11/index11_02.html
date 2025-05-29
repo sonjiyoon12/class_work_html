@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 도전 문제</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="challenge.css">
+    <style>
+        /* 문제 1: 메뉴 링크에 마우스 오버 시 */
+        .menu a:hover {
+            background-color: lightcoral;
+        }
+
+        /* 문제 2: 로그인 폼 입력창에 포커스 시 */
+        .login-fom input:focus {
+            border: 2px solid black;
+            color: palevioletred;
+            outline: none;
+        }
+
+
+        /* 문제 3: 랭킹 리스트의 첫 번째 항목 */
+        ul li:first-child {
+            background-color: aquamarine;
+        }
+        
+        /* 문제 4: 랭킹 리스트의 마지막 항목 */
+        ul li:last-child {
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        /* 문제 5: 랭킹 리스트의 3 번째 항목 */
+        ul li:nth-child(3) {
+            font-size: 20px;
+            background-color: greenyellow;
+        }
+   
+    </style>
+</head>
+<body>
+    <h2>도전 문제</h2>
+    <div class="menu">
+        <a href="#">메뉴 1</a>
+        <a href="#">메뉴 2</a>
+        <a href="#">메뉴 3</a>
+    </div>
+    <form class="login-form">
+        <input type="text" placeholder="아이디">
+        <input type="password" placeholder="비밀번호">
+        <button type="submit">로그인</button>
+    </form>
+    <ul class="ranking">
+        <li>1등: 김철수</li>
+        <li>2등: 이영희</li>
+        <li>3등: 박민수</li>
+        <li>4등: 최지영</li>
+    </ul>
+</body>
+</html>
