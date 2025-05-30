@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 최대 너비와 최대 높이 속성</title>
+    <style>
+        *, *::before, *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: lightblue;
+            padding: 20px;
+            /* 위, 아래, 좌우 */
+            margin: 20px auto;
+        }
+        .box {
+            /* 최대 높이 지정 */
+            max-height: 200px;
+            padding: 10px;
+            background-color: lightcoral;
+            overflow: scroll;
+            /* 내용이 넘치면 자동으로 스크롤 생성 */
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <h2>max-witdh 예제</h2>
+        <p>이 컨테이너는 최대 너비 500로 제한 합니다. 창 크기를 조절해 보세요</p>
+        </div>
+            <div class="container">
+                <div class="box">
+                    <h2>max-height</h2>
+                    <p>이 박스는 최대 높이 200px 입니다. 내용이 많아지면 자동으로 스크롤이 생깁니다</p>
+                    <p>더 많은 텍스트를 추가해서 확인해 봅시다</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Repudiandae eveniet laudantium deserunt nisi voluptates. 
+                    Vitae quos repellendus eveniet voluptatum aspernatur illo necessitatibus, omnis deleniti quis repudiandae? 
+                    Quis reprehenderit itaque esse.
+                    Quidem unde deserunt consequatur aspernatur doloremque, libero dolor iste velit ipsam error. 
+                    Dignissimos vel eaque tenetur voluptate tempora tempore earum id ex. 
+                    Possimus delectus consectetur sint numquam doloremque! Quaerat, debitis.
+                </div>
+            </div>
+        </div>
+   </div> 
+</body>
+</html>
