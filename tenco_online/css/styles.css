@@ -135,7 +135,7 @@ section {
   height: 100%;
   background-color: #fff;
   display: flex;
-  border: 1px solid rgb(212, 212, 212);
+  border: 1px solid rgb(212, 211, 211);
   border-radius: 10px;
   padding: 0.5rem 1rem;
   /* x, y, bluer-radius 색상 */
@@ -219,7 +219,7 @@ ul {
 
 .class--card {
   width: 240px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 10px 5px 5px rgba(25, 42, 70, 0.3);
   margin: 0 10px;
 }
@@ -229,7 +229,7 @@ ul {
 }
 
 
-.class--cntainer {
+.class--container {
   width: 100;
   padding: 0.5rem 1rem 1rem 1rem;
 }
@@ -241,19 +241,45 @@ ul {
 }
 
 .class--format {
-  font-size: 13px;
+  font-size: 0.8rem;
   background-color: blue;
   color: white;
   padding: 0.2rem;
 }
 
-.clss--desc {
+.class--desc {
   font-size: 0.8rem;
   width: 100%;
   margin-top: 1rem;
   color: #545e6f;
   padding: 0.2rem;
 }
+
+footer {
+  border: 1px solid #e4e4e4;
+  background-color: #f8f8f8;
+  color: gray;
+  padding: 1.5rem 0;
+  margin: 2rem 0 0 0;
+}
+
+.footer--message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.3rem 0.5rem;
+
+}
+
+.footer--contect {
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.footer--copyright {
+    margin: 0.5rem 0.5rem;
+}
+
+
 
 /* 미디어 쿼리 사용 */
 @media (min-width: 1200px) {
@@ -262,3 +288,10 @@ ul {
     max-width: 1200px;
   }
 }
+
+  @media (max-width: 900px) {
+    .skill--container {
+      display: none;
+    }
+    
+  }
